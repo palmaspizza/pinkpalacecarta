@@ -1015,7 +1015,7 @@ button {
     }
   }
 </script>
-<input type="text" id="resultado">
+<input hidden type="text" id="resultado">
   <section class="products">
    
  
@@ -2677,9 +2677,9 @@ function updateCart() {
   }
 
   // Incluye detalles adicionales si existen
-  const message = `Hola, soy ${name}. Necesito ${resultado} y Quiero pedir:\n\n${orderText}${extraDetails ? extraDetails + '\n\n' : ''}Total: ${total}\nForma de pago: ${payment}`;
+  const message = `Hola, soy ${name} ${resultado} y Quiero pedir:\n\n${orderText}${extraDetails ? extraDetails + '\n\n' : ''}**Total:** **${total}\nForma de pago:** _${payment}_`;
   const encodedMessage = encodeURIComponent(message);
-  window.open(`https://wa.me/56954998792?text=${encodedMessage}`, '_blank');
+  window.open(`https://wa.me/56944680449?text=${encodedMessage}`, '_blank');
 }
 
   </script>
